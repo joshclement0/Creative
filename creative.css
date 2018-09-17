@@ -12,7 +12,7 @@ main{
 .floating-menu-bottom{
     width:100%;
     position:fixed;
-    bottom:3px;
+    bottom:10px;
 }
 .button{
     width:25%;
@@ -29,4 +29,12 @@ main{
     content: "";
     display:table;
     clear: both;
+}
+.number{
+    width:15%;
+    float:left;
+}
+.input{
+    width:55%;
+    float:left;
 }
