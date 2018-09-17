@@ -1,0 +1,30 @@
+
+* {
+    box-sizing: border-box;
+}
+.floating-menu-top{
+    width:100%;
+    position:fixed;
+    top:3px;
+}
+.floating-menu-bottom{
+    width:100%;
+    position:fixed;
+    bottom:3px;
+}
+.button{
+    width:25%;
+    float:right;
+}
+.column{
+    padding:3px;
+}
+.text{
+    width:75%;
+    float:left;
+}
+.column:after{
+    content: "";
+    display:table;
+    clear: both;
+}
