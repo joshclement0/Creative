@@ -10,9 +10,11 @@ main{
     top:3px;
 }
 .floating-menu-bottom{
+    background-color:lightblue;
+    font-size: large;
     width:100%;
     position:fixed;
-    bottom:10px;
+    bottom:20px;
 }
 .button{
     width:25%;
