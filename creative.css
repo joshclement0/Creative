@@ -21,6 +21,7 @@ main{
     margin:7px;
     outline: 5px solid royalblue;
     background: lightgray;
+    min-width:100px;
 }
 
 p {
