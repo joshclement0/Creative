@@ -30,11 +30,23 @@
                 </div>
                 <div class="car">
                     <img class="car_img" src="resources/herbie.jpg" onclick=changeherb() style="cursor:pointer"><br>
-                    <p>VolkWagon Beetle - $12,000.00</p>
+                    <p>VolkWagon Beetle - $60,000.00</p>
                 </div>
                 <div class="car">
                     <img class="car_img" src="resources/ferrari.jpg" onclick=changefer() style="cursor:pointer"><br>
-                    <p>Ferrari Dino 206 gt - $15,000.00</p>
+                    <p>Ferrari Dino 206 gt - $150,000.00</p>
+                </div>
+                <div class="car">
+                    <img class="car_img" src="resources/FordF150.jpg" onclick=changef150() style="cursor:pointer"><br>
+                    <p>Ford F150 Lariat - $38,000.00</p>
+                </div>
+                <div class="car">
+                    <img class="car_img" src="resources/Buick.jpg" onclick=changebuick() style="cursor:pointer"><br>
+                    <p>Buick Century - $3,500.00</p>
+                </div>
+                <div class="car">
+                    <img class="car_img" src="resources/ms200.jpg" onclick=changemes() style="cursor:pointer"><br>
+                    <p>Messerschmitt KR200 - $30,000.00</p>
                 </div>
             </div>
         
@@ -50,6 +62,16 @@
     
         </main>
         <script>
+            function openNav(){
+                document.getElementById("mySidenav").style.width="250px";
+                document.getElementById("mySidenav").style.border="5px solid royalblue";
+                document.getElementById("mySidenavimg").style.height="70%";
+            }
+            function closeNav(){
+                document.getElementById("mySidenav").style.width="0";
+                document.getElementById("mySidenavimg").innerHTML="";
+                document.getElementById("mySidenav").style.border="0";
+            }
             function changetes(){
                 document.getElementById("Model").innerHTML="Tesla";
                 document.getElementById("Make").innerHTML="S P100DL";
@@ -58,7 +80,7 @@
                 document.getElementById("facts").innerHTML="With a sofware limited top speed "+
                 "of 130mph, and an acceleration from 0-60mph in 2.5s, this car will not only "+
                 "be the cleanest on the road, but will be one of the quickest.";
-                document.getElementById("mySidenavimg").innerHTML="<img src=resources/tesla.jpg>";
+                document.getElementById("mySidenavimg").innerHTML="<img class=scar src=resources/tesla.jpg>";
                 openNav();
             }
             function changecosmo(){
@@ -69,7 +91,7 @@
                 document.getElementById("facts").innerHTML="Not only does its top "
                 +"speed and acceleration vary depending on the cougars winning streak, "
                 +"but its price does too.";
-                document.getElementById("mySidenavimg").innerHTML="<img src=resources/cosmo.png>";
+                document.getElementById("mySidenavimg").innerHTML="<img class=scar src=resources/cosmo.png>";
                 openNav();
             }
             function changepeel(){
@@ -77,11 +99,11 @@
                 document.getElementById("Make").innerHTML="P50";
                 document.getElementById("Year").innerHTML="1964";
                 document.getElementById("Price").innerHTML="$21,000.00"
-                document.getElementById("facts").innerHTML="Just 53 in long and 39 in wide, "
+                document.getElementById("facts").innerHTML="Just 53 in length and 39 in width, "
                 +"with a weight of only 132 lb, this car will have you zipping around town "
                 +"at a staggering 38 mph, but don't worry, if you can't find a parking space, "
                 +"this car is elevator compatible";
-                document.getElementById("mySidenavimg").innerHTML="<img src=resources/plp50.jpg>";
+                document.getElementById("mySidenavimg").innerHTML="<img class=scar src=resources/plp50.jpg>";
                 openNav();
             }
             function changedelo(){
@@ -92,47 +114,70 @@
                 document.getElementById("facts").innerHTML="This car was only produced for "
                 +"2 years before Delorean Motors Co went bankrupt. It's top speed is 109mph, "
                 +"but there have been reports of it going both much faster, and much slower.";
-                document.getElementById("mySidenavimg").innerHTML="<img src=resources/delorean.jpg>";
+                document.getElementById("mySidenavimg").innerHTML="<img class=scar src=resources/delorean.jpg>";
                 openNav();
             }
             function changetoy(){
-            document.getElementById("Model").innerHTML="Toyota";
-            document.getElementById("Make").innerHTML="Corolla";
-            document.getElementById("Year").innerHTML="2012";
-            document.getElementById("Price").innerHTML="$3,000.00"
-            document.getElementById("facts").innerHTML="This car has great functionallity";
-            document.getElementById("mySidenavimg").innerHTML="<img src=resources/toyota.jpg>";
-            openNav();
+                document.getElementById("Model").innerHTML="Toyota";
+                document.getElementById("Make").innerHTML="Corolla";
+                document.getElementById("Year").innerHTML="2012";
+                document.getElementById("Price").innerHTML="$3,000.00"
+                document.getElementById("facts").innerHTML="This car has great functionallity";
+                document.getElementById("mySidenavimg").innerHTML="<img class=scar src=resources/toyota.jpg>";
+                openNav();
             }
             function changeherb(){
                 document.getElementById("Model").innerHTML="VW";
                 document.getElementById("Make").innerHTML="Beatle";
                 document.getElementById("Year").innerHTML="1980";
-                document.getElementById("Price").innerHTML="$12,000.00"
+                document.getElementById("Price").innerHTML="$60,000.00"
                 document.getElementById("facts").innerHTML="This car was designed to be everyman's car, "
                 +"based of the words of Adolf Hitler- A car should look like a beetle. "
                 +"With a top speed of 77.8mph, you'll be sure to place first and third at your next race";
-                document.getElementById("mySidenavimg").innerHTML="<img src=resources/herbie.jpg>";
+                document.getElementById("mySidenavimg").innerHTML="<img class=scar src=resources/herbie.jpg>";
                 openNav();
             }
             function changefer(){
                 document.getElementById("Model").innerHTML="Ferrari";
                 document.getElementById("Make").innerHTML="Dino 206 gt";
                 document.getElementById("Year").innerHTML="1969";
-                document.getElementById("Price").innerHTML="$12,000.00"
+                document.getElementById("Price").innerHTML="$150,000.00"
                 document.getElementById("facts").innerHTML="This car never carried the name of Ferrari on it's hood, "
-                +"the feared it's mid-size engine would tarnish the Ferrari name";
-                document.getElementById("mySidenavimg").innerHTML="<img src=resources/ferrari.jpg>";
+                +"they feared it's mid-size engine would tarnish the Ferrari name. It was designed "
+                +"to compete with the Porsche 911. Top speed - 146 mph.";
+                document.getElementById("mySidenavimg").innerHTML="<img class=scar src=resources/ferrari.jpg>";
                 openNav();
             }
-            function openNav(){
-                document.getElementById("mySidenav").style.width="250px";
-                document.getElementById("mySidenav").style.border="5px solid royalblue";
+            function changef150(){
+                document.getElementById("Model").innerHTML="Ford";
+                document.getElementById("Make").innerHTML="F150 Lariat";
+                document.getElementById("Year").innerHTML="2006";
+                document.getElementById("Price").innerHTML="$38,000.00"
+                document.getElementById("facts").innerHTML="With the power of 310 clydesdales under its hood, "
+                +"this truck will get the job done while making you question if you are now part mexican";
+                document.getElementById("mySidenavimg").innerHTML="<img class=scar src=resources/FordF150.jpg>";
+                openNav();
             }
-            function closeNav(){
-                document.getElementById("mySidenav").style.width="0";
-                document.getElementById("mySidenavimg").innerHTML="";
-                document.getElementById("mySidenav").style.border="0";
+            function changebuick(){
+                document.getElementById("Model").innerHTML="Buick";
+                document.getElementById("Make").innerHTML="Century";
+                document.getElementById("Year").innerHTML="2003";
+                document.getElementById("Price").innerHTML="$3,500.00"
+                document.getElementById("facts").innerHTML="Perfect for your grandma, or a grandchild who is looking "
+                +"for a free car";
+                document.getElementById("mySidenavimg").innerHTML="<img class=scar src=resources/Buick.jpg>";
+                openNav();
+            }
+            function changemes(){
+                document.getElementById("Model").innerHTML="Messerschmitt";
+                document.getElementById("Make").innerHTML="KR200";
+                document.getElementById("Year").innerHTML="1958";
+                document.getElementById("Price").innerHTML="$30,000.00"
+                document.getElementById("facts").innerHTML="When after WW2, Fritz Fend was banned from making "
+                +"airplanes, he instead used his factory to make cars. It's tandam seating and 191cc engine will"
+                +"help you fly around with a date, at 65mph";
+                document.getElementById("mySidenavimg").innerHTML="<img class=scar src=resources/ms200.jpg>";
+                openNav();
             }
         </script>
     </body>
