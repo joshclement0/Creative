@@ -5,7 +5,7 @@
     <body>
     <main>
         <nav class="floating-menu-top">
-            <img class="logo" src="resources/BUC_logo.png"><h1 class="name"></h1>BYU Used Cars</h1>
+            <img class="logo" src="resources/BUC_logo.png"><h1 class="name">BYU Used Cars</h1>
         </nav>
         <div class="row">
             <div class="car">
@@ -64,6 +64,16 @@
             +"with a weight of only 132 lb, this car will have you zipping around town "
             +"at a staggering 38 mph, but don't worry, if you can't find a parking space, "
             +"this car is elevator compatible";
+            openNav();
+        }
+        function changedelo(){
+            document.getElementById("Model").innerHTML="Delorean";
+            document.getElementById("Make").innerHTML="DMC-12";
+            document.getElementById("Year").innerHTML="1982";
+            document.getElementById("Price").innerHTML="12,000.00"
+            document.getElementById("facts").innerHTML="This car was only produced for "
+            +"2 years before Delorean Motors Co went bankrupt. It's top speed is 109mph, "
+            +"but there have been reports of it going both much faster, and much slower.";
             openNav();
         }
         function openNav(){
