@@ -1,6 +1,7 @@
 main{
     margin-top: 80px;
 }
+
 * {
     box-sizing: border-box;
 }
@@ -10,8 +11,8 @@ main{
 }
 
 .logo {
-    width:15%;
     float:left;
+    height:100%;
 }
 
 .car {
@@ -33,6 +34,8 @@ p {
     position:fixed;
     top:3px;
     float:left;
+    height:75px;
+    min-width: 375px;
 }
 
 .name{
