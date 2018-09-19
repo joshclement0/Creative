@@ -11,7 +11,7 @@
         </nav>
         <div class="row">
             <div class="car">
-                <img src="resources/tesla.jpg"><br>
+                <img src="resources/tesla.jpg" onclick=change() style="cursor:pointer"><br>
                 <p>Tesla Model S P100DL - $21,000.00</p>
             </div>
             <div class="car">
@@ -37,7 +37,7 @@
             </div>
         </p1>
         <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&time;</a>
+            <p class="closebtn" onclick="closeNav()" style="cursor:pointer">x</p>
             <h1 id="Model">Model</h1>
             <h1 id="Make">Model</h1>
             <h1 id="Year">Year</h1>
@@ -45,6 +45,13 @@
         </div>
     </main>
     <script>
+        function change(){
+            document.getElementById("Model").innerHTML="Tesla";
+            document.getElementById("Make").innerHTML="S P100DL";
+            document.getElementById("Year").innerHTML="2018";
+            document.getElementById("Price").innerHTML="21,000.00"
+            openNav();
+        }
         function openNav(){
             document.getElementById("mySidenav").style.width="250px";
         }

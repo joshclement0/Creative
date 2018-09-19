@@ -64,8 +64,10 @@ p {
     left:0;
     height:60%;
     transition:0.5s;
-    padding-top:60px;
-    background-color:#111;
+    padding-top:50px;
+    padding-left:8px;
+    font-size:12px;
+    background-color:Azure;
     overflow-x:hidden;
 }
 .sidenav .closebtn{
