@@ -21,6 +21,8 @@ main{
     outline: 5px solid royalblue;
     background: lightgray;
     min-width:100px;
+    max-width:150px;
+    min-height:180px;
 }
 
 p {
@@ -81,11 +83,11 @@ p {
     position:fixed;
     top:20%;
     left:0;
-    height:60%;
+    height:70%;
     transition:0.5s;
-    padding-top:30px;
+    padding-top:22px;
     font-size:12px;
-    background-color:Azure;
+    background-color:lightGray;
     overflow-x:hidden;
 }
 .sidenavimg{
