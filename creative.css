@@ -84,6 +84,13 @@ p {
     font-size:12px;
     background-color:Azure;
     overflow-x:hidden;
+    float:left;
+}
+.facts{
+    width:20%;
+}
+.sidenavimg{
+    width:100px;
 }
 .sidenav h1{
     padding-left:8px;

@@ -26,12 +26,17 @@
             </div>
         </div>
         <div id="mySidenav" class="sidenav">
+            <div id="facts" class="facts">
             <p class="closebtn" onclick="closeNav()" style="cursor:pointer">x</p>
             <h1 id="Model">Model</h1>
             <h1 id="Make">Model</h1>
             <h1 id="Year">Year</h1>
             <h1 id="Price">Price</h1>
             <p id="facts">Facts</p>
+            </div>
+            <div id="sidenavimg" class="sidenavimg">
+                
+            </div>
         </div>
     </main>
     <script>
@@ -43,6 +48,7 @@
             document.getElementById("facts").innerHTML="With a sofware limited top speed "+
             "of 130mph, and an acceleration from 0-60mph in 2.5s, this car will not only "+
             "be the cleanest on the road, but will be one of the quickest.";
+            document.getElementById("sidenavimg").innerHTML="<img src=resources/tesla.jpg style=width:30%>";
             openNav();
         }
         function changecosmo(){
