@@ -1,6 +1,8 @@
 <html>
     <head>
-         <link rel="stylesheet" type="text/css" href="creative.css">
+        <link rel="stylesheet" type="text/css" href="creative.css">
+        <script>
+        </script>
     </head>
     <body>
     <main>
@@ -25,7 +27,30 @@
                 <p>Delorean - $12,000,000</p>
             </div>
         </div>
-        
+        <nav class="floating-menu-bottom">
+           
+        </nav>
+        <p1 id="1">
+            <div class= "column">
+                <div class="text"><p>this is the formatting</p></div>
+                <div class="button"><p> of the button as well</p></div>
+            </div>
+        </p1>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&time;</a>
+            <h1 id="Model">Model</h1>
+            <h1 id="Make">Model</h1>
+            <h1 id="Year">Year</h1>
+            <h1 id="Price">Price</h1>
+        </div>
     </main>
+    <script>
+        function openNav(){
+            document.getElementById("mySidenav").style.width="250px";
+        }
+        function closeNav(){
+            document.getElementById("mySidenav").style.width="0";
+        }
+    </script>
     </body>
 </html>
