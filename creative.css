@@ -5,8 +5,12 @@ main{
     box-sizing: border-box;
 }
 
-img {
+.car_img {
     width:100%;
+}
+
+.logo {
+    width:15%;
 }
 
 .car {
