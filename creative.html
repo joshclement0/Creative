@@ -2,37 +2,37 @@
     <head>
         <link rel="stylesheet" type="text/css" href="creative.css">
     </head>
-    <body>
-    <main>
-        <nav class="floating-menu-top">
-            <img class="logo" src="resources/BUC_logo.png"><h1 class="name">BYU Used Cars</h1>
-        </nav>
-        <div class="row">
-            <div class="car">
-                <img class="car_img" src="resources/tesla.jpg" onclick=changetes() style="cursor:pointer"><br>
-                <p>Tesla Model S P100DL - $21,000.00</p>
+    <body background="resources/wallpaper.png">
+        <main>
+            <nav class="floating-menu-top">
+                <img class="logo" src="resources/BUC_logo.png"><h1 class="name">BYU Used Cars</h1>
+            </nav>
+            <div class="row">
+                <div class="car">
+                    <img class="car_img" src="resources/tesla.jpg" onclick=changetes() style="cursor:pointer"><br>
+                    <p>Tesla Model S P100DL - $21,000.00</p>
+                </div>
+                <div class="car">
+                    <img class="car_img" src="resources/plp50.jpg" onclick=changepeel() style="cursor:pointer"><br>
+                    <p>Peel p50 - $6,000.00</p>
+                </div>
+                <div class="car">
+                    <img class="car_img" src="resources/cosmo.png" onclick=changecosmo() style="cursor:pointer"><br>
+                    <p>Cosmobile - $14,000.00</p>
+                </div>
+                <div class="car">
+                    <img class="car_img" src="resources/delorean.jpg" onclick=changedelo() style="cursor:pointer"><br>
+                    <p>Delorean - $12,000,000</p>
+                </div>
+                <div class="car">
+                    <img class="car_img" src="resources/toyota.jpg" onclick=changetoy() style="cursor:pointer"><br>
+                    <p>Toyota Corolla - $3,000.00</p>
+                </div>
+                <div class="car">
+                    <img class="car_img" src="resources/herbie.jpg" onclick=changeherb() style="cursor:pointer"><br>
+                    <p>Toyota Corolla - $3,000.00</p>
+                </div>
             </div>
-            <div class="car">
-                <img class="car_img" src="resources/plp50.jpg" onclick=changepeel() style="cursor:pointer"><br>
-                <p>Peel p50 - $6,000.00</p>
-            </div>
-            <div class="car">
-                <img class="car_img" src="resources/cosmo.png" onclick=changecosmo() style="cursor:pointer"><br>
-                <p>Cosmobile - $14,000.00</p>
-            </div>
-            <div class="car">
-                <img class="car_img" src="resources/delorean.jpg" onclick=changedelo() style="cursor:pointer"><br>
-                <p>Delorean - $12,000,000</p>
-            </div>
-            <div class="car">
-                <img class="car_img" src="resources/toyota.jpg" onclick=changetoy() style="cursor:pointer"><br>
-                <p>Toyota Corolla - $3,000.00</p>
-            </div>
-            <div class="car">
-                <img class="car_img" src="resources/herbie.jpg" onclick=changeherb() style="cursor:pointer"><br>
-                <p>Toyota Corolla - $3,000.00</p>
-            </div>
-        </div>
         
         <div id="mySidenav" class="sidenav">
             <p class="closebtn" onclick="closeNav()" style="cursor:pointer">x</p>
@@ -43,54 +43,51 @@
             <p id="facts">Facts</p>
         </div>
         <div id="mySidenavimg" class="sidenavimg"></div>
-    </main>
-    <script>
-        function changetes(){
-            document.getElementById("Model").innerHTML="Tesla";
-            document.getElementById("Make").innerHTML="S P100DL";
-            document.getElementById("Year").innerHTML="2018";
-            document.getElementById("Price").innerHTML="21,000.00"
-            document.getElementById("facts").innerHTML="With a sofware limited top speed "+
-            "of 130mph, and an acceleration from 0-60mph in 2.5s, this car will not only "+
-            "be the cleanest on the road, but will be one of the quickest.";
-            document.getElementById("mySidenavimg").innerHTML="<img src=resources/tesla.jpg>";
-            openNav();
-        }
-        function changecosmo(){
-            document.getElementById("Model").innerHTML="Ford";
-            document.getElementById("Make").innerHTML="Cosmobile";
-            document.getElementById("Year").innerHTML="2012";
-            document.getElementById("Price").innerHTML="14,000.00"
-            document.getElementById("facts").innerHTML="Not only does its top "
-            +"speed and acceleration vary depending on the cougars winning streak, "
-            +"but its price does too.";
-            document.getElementById("mySidenavimg").innerHTML="<img src=resources/cosmo.png>";
-            openNav();
-        }
-        function changepeel(){
-            document.getElementById("Model").innerHTML="Peel";
-            document.getElementById("Make").innerHTML="P50";
-            document.getElementById("Year").innerHTML="1964";
-            document.getElementById("Price").innerHTML="21,000.00"
-            document.getElementById("facts").innerHTML="Just 53 in long and 39 in wide, "
-            +"with a weight of only 132 lb, this car will have you zipping around town "
-            +"at a staggering 38 mph, but don't worry, if you can't find a parking space, "
-            +"this car is elevator compatible";
-            document.getElementById("mySidenavimg").innerHTML="<img src=resources/plp50.jpg>";
-            openNav();
-        }
-        function changedelo(){
-            document.getElementById("Model").innerHTML="Delorean";
-            document.getElementById("Make").innerHTML="DMC-12";
-            document.getElementById("Year").innerHTML="1982";
-            document.getElementById("Price").innerHTML="12,000.00"
-            document.getElementById("facts").innerHTML="This car was only produced for "
-            +"2 years before Delorean Motors Co went bankrupt. It's top speed is 109mph, "
-            +"but there have been reports of it going both much faster, and much slower.";
-            document.getElementById("mySidenavimg").innerHTML="<img src=resources/delorean.jpg>";
-            openNav();
-        }
-        function changetoy(){
+    
+        </main>
+        <script>
+            function changetes(){
+                document.getElementById("Model").innerHTML="Tesla";
+                document.getElementById("Make").innerHTML="S P100DL";
+                document.getElementById("Year").innerHTML="2018";
+                document.getElementById("Price").innerHTML="21,000.00"
+                document.getElementById("facts").innerHTML="With a sofware limited top speed "+
+                "of 130mph, and an acceleration from 0-60mph in 2.5s, this car will not only "+
+                "be the cleanest on the road, but will be one of the quickest.";
+                openNav();
+            }
+            function changecosmo(){
+                document.getElementById("Model").innerHTML="Ford";
+                document.getElementById("Make").innerHTML="Cosmobile";
+                document.getElementById("Year").innerHTML="2012";
+                document.getElementById("Price").innerHTML="14,000.00"
+                document.getElementById("facts").innerHTML="Not only does its top "
+                +"speed and acceleration vary depending on the cougars winning streak, "
+                +"but its price does too.";
+                openNav();
+            }
+            function changepeel(){
+                document.getElementById("Model").innerHTML="Peel";
+                document.getElementById("Make").innerHTML="P50";
+                document.getElementById("Year").innerHTML="1964";
+                document.getElementById("Price").innerHTML="21,000.00"
+                document.getElementById("facts").innerHTML="Just 53 in long and 39 in wide, "
+                +"with a weight of only 132 lb, this car will have you zipping around town "
+                +"at a staggering 38 mph, but don't worry, if you can't find a parking space, "
+                +"this car is elevator compatible";
+                openNav();
+            }
+            function changedelo(){
+                document.getElementById("Model").innerHTML="Delorean";
+                document.getElementById("Make").innerHTML="DMC-12";
+                document.getElementById("Year").innerHTML="1982";
+                document.getElementById("Price").innerHTML="12,000.00"
+                document.getElementById("facts").innerHTML="This car was only produced for "
+                +"2 years before Delorean Motors Co went bankrupt. It's top speed is 109mph, "
+                +"but there have been reports of it going both much faster, and much slower.";
+                openNav();
+            }
+            function changetoy(){
             document.getElementById("Model").innerHTML="Toyota";
             document.getElementById("Make").innerHTML="Corolla";
             document.getElementById("Year").innerHTML="2012";
@@ -108,15 +105,12 @@
             document.getElementById("mySidenavimg").innerHTML="<img src=resources/herb.jpg>";
             openNav();
         }
-        function openNav(){
-            document.getElementById("mySidenav").style.width="250px";
-            document.getElementById("mySidenavimg").style.height="60%";
-        }
-        function closeNav(){
-            document.getElementById("mySidenav").style.width="0";
-            document.getElementById("mySidenavimg").style.width="0";
-            document.getElementById("mySidenavimg").innerHTML="";
-        }
-    </script>
+            function openNav(){
+                document.getElementById("mySidenav").style.width="250px";
+            }
+            function closeNav(){
+                document.getElementById("mySidenav").style.width="0";
+            }
+        </script>
     </body>
 </html>
