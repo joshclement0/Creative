@@ -1,55 +1,7 @@
 <html>
     <head>
-         <link rel="stylesheet" type="text/css" href="creative.css">
+        <link rel="stylesheet" type="text/css" href="creative.css">
         <script>
-            function addquestion(event){
-                var id="0";
-                var q1= "";
-                var q2="";
-                var q3="";
-                var q4="";
-                var q5="";
-                if (q1==""){
-                    id="1";
-                    q1=document.getElementById("this question").value;
-                    document.getElementById(id).innerHTML="<div class=column><div class=text>"
-                    +q1+"</div><div class=button><button onclick=delete(1)>Delete</div></div>";
-                    event.preventDefault();
-                }
-                else if (q2==""){
-                    id="2";
-                    q2=document.getElementById("this question").value;
-                    document.getElementById(id).innerHTML="<div class=column><div class=text>"
-                    +q2+"</div><div class=button><button onclick=delete(2)>Delete</div></div>";
-                    event.preventDefault();
-                }
-                else if (q3==""){
-                    id="3";
-                    q3=document.getElementById("this question").value;
-                    document.getElementById(id).innerHTML="<div class=column><div class=text>"
-                    +q3+"</div><div class=button><button onclick=delete(3)>Delete</div></div>";
-                    event.preventDefault();
-                }
-                else if (q4==""){
-                    id="4";
-                    q4=document.getElementById("this question").value;
-                    document.getElementById(id).innerHTML="<div class=column><div class=text>"
-                    +q4+"</div><div class=button><button onclick=delete(4)>Delete</div></div>";
-                    event.preventDefault();
-                }
-                else if (q5==""){
-                    id="5";
-                    q5=document.getElementById("this question").value;
-                    document.getElementById(id).innerHTML="<div class=column><div class=text>"
-                    +q5+"</div><div class=button><button onclick=delete(5)>Delete</div></div>";
-                    event.preventDefault();
-                }
-                else {
-                   //return error tell them to delete
-                   return;//don't do anything
-                }
-                
-            }
         </script>
     </head>
     <body>
@@ -58,14 +10,7 @@
             <h1>Title of the Project or something like that. Maybe something saying that if there are no questions to add them</h1>
         </nav>
         <nav class="floating-menu-bottom">
-            <div class="column">
-            <div class="text">
-                Question: <input type="question" id="this question" size=30%><br>
-            </div>
-            <div class="button">
-                <button onclick="addquestion(event)" id=question>ADD</button>
-            </div>
-            </div>
+           
         </nav>
         <p1 id="1">
             <div class= "column">
@@ -73,10 +18,21 @@
                 <div class="button"><p> of the button as well</p></div>
             </div>
         </p1>
-        <p1 id="2">some text</p1>
-        <p1 id="3"> more text</p1>
-        <p1 id="4"> and more</p1>
-        <p1 id="5">and then more</p1>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&time;</a>
+            <h1 id="Model">Model</h1>
+            <h1 id="Make">Model</h1>
+            <h1 id="Year">Year</h1>
+            <h1 id="Price">Price</h1>
+        </div>
     </main>
+    <script>
+        function openNav(){
+            document.getElementById("mySidenav").style.width="250px";
+        }
+        function closeNav(){
+            document.getElementById("mySidenav").style.width="0";
+        }
+    </script>
     </body>
 </html>

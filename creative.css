@@ -40,3 +40,21 @@ main{
     width:55%;
     float:left;
 }
+.sidenav{
+    width:0;
+    position:fixed;
+    top:20%;
+    left:0;
+    height:60%;
+    transition:0.5s;
+    padding-top:60px;
+    background-color:#111;
+    overflow-x:hidden;
+}
+.sidenav .closebtn{
+    position: absolute;
+    top:0;
+    right:25px;
+    font-size:36px;
+    margin-left:50px;
+}
