@@ -1,7 +1,6 @@
 main{
     margin-top: 80px;
 }
-
 * {
     box-sizing: border-box;
 }
@@ -87,15 +86,20 @@ p {
     font-size:12px;
     background-color:Azure;
     overflow-x:hidden;
-    float:left;
-}
-.facts{
-    width:20%;
 }
 .sidenavimg{
-    width:100px;
+    top: 20%;
+    left:250px;
+    transition:.5s;
+    position:fixed;
+    height:0;
+    
 }
 .sidenav h1{
+    padding-left:8px;
+    padding-right:8px;
+}
+.sidenav p{
     padding-left:8px;
     padding-right:8px;
 }

@@ -26,18 +26,14 @@
             </div>
         </div>
         <div id="mySidenav" class="sidenav">
-            <div id="facts" class="facts">
             <p class="closebtn" onclick="closeNav()" style="cursor:pointer">x</p>
             <h1 id="Model">Model</h1>
             <h1 id="Make">Model</h1>
             <h1 id="Year">Year</h1>
             <h1 id="Price">Price</h1>
             <p id="facts">Facts</p>
-            </div>
-            <div id="sidenavimg" class="sidenavimg">
-                
-            </div>
         </div>
+        <div id="mySidenavimg" class="sidenavimg"></div>
     </main>
     <script>
         function changetes(){
@@ -48,7 +44,7 @@
             document.getElementById("facts").innerHTML="With a sofware limited top speed "+
             "of 130mph, and an acceleration from 0-60mph in 2.5s, this car will not only "+
             "be the cleanest on the road, but will be one of the quickest.";
-            document.getElementById("sidenavimg").innerHTML="<img src=resources/tesla.jpg style=width:30%>";
+            document.getElementById("mySidenavimg").innerHTML="<img src=resources/tesla.jpg>";
             openNav();
         }
         function changecosmo(){
@@ -59,6 +55,7 @@
             document.getElementById("facts").innerHTML="Not only does its top "
             +"speed and acceleration vary depending on the cougars winning streak, "
             +"but its price does too.";
+            document.getElementById("mySidenavimg").innerHTML="<img src=resources/cosmo.png>";
             openNav();
         }
         function changepeel(){
@@ -70,6 +67,7 @@
             +"with a weight of only 132 lb, this car will have you zipping around town "
             +"at a staggering 38 mph, but don't worry, if you can't find a parking space, "
             +"this car is elevator compatible";
+            document.getElementById("mySidenavimg").innerHTML="<img src=resources/plp50.jpg>";
             openNav();
         }
         function changedelo(){
@@ -80,13 +78,17 @@
             document.getElementById("facts").innerHTML="This car was only produced for "
             +"2 years before Delorean Motors Co went bankrupt. It's top speed is 109mph, "
             +"but there have been reports of it going both much faster, and much slower.";
+            document.getElementById("mySidenavimg").innerHTML="<img src=resources/delorean.jpg>";
             openNav();
         }
         function openNav(){
             document.getElementById("mySidenav").style.width="250px";
+            document.getElementById("mySidenavimg").style.height="60%";
         }
         function closeNav(){
             document.getElementById("mySidenav").style.width="0";
+            document.getElementById("mySidenavimg").style.width="0";
+            document.getElementById("mySidenavimg").innerHTML="";
         }
     </script>
     </body>
