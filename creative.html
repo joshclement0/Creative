@@ -24,7 +24,16 @@
                 <img class="car_img" src="resources/delorean.jpg" onclick=changedelo() style="cursor:pointer"><br>
                 <p>Delorean - $12,000,000</p>
             </div>
+            <div class="car">
+                <img class="car_img" src="resources/toyota.jpg" onclick=changetoy() style="cursor:pointer"><br>
+                <p>Toyota Corolla - $3,000.00</p>
+            </div>
+            <div class="car">
+                <img class="car_img" src="resources/herbie.jpg" onclick=changeherb() style="cursor:pointer"><br>
+                <p>Toyota Corolla - $3,000.00</p>
+            </div>
         </div>
+        
         <div id="mySidenav" class="sidenav">
             <p class="closebtn" onclick="closeNav()" style="cursor:pointer">x</p>
             <h1 id="Model">Model</h1>
@@ -79,6 +88,24 @@
             +"2 years before Delorean Motors Co went bankrupt. It's top speed is 109mph, "
             +"but there have been reports of it going both much faster, and much slower.";
             document.getElementById("mySidenavimg").innerHTML="<img src=resources/delorean.jpg>";
+            openNav();
+        }
+        function changetoy(){
+            document.getElementById("Model").innerHTML="Toyota";
+            document.getElementById("Make").innerHTML="Corolla";
+            document.getElementById("Year").innerHTML="2012";
+            document.getElementById("Price").innerHTML="3,000.00"
+            document.getElementById("facts").innerHTML="This car has great functionallity";
+            document.getElementById("mySidenavimg").innerHTML="<img src=resources/toyota.jpg>";
+            openNav();
+        }
+        function changeherb(){
+            document.getElementById("Model").innerHTML="VW";
+            document.getElementById("Make").innerHTML="Beatle";
+            document.getElementById("Year").innerHTML="1980";
+            document.getElementById("Price").innerHTML="12,000.00"
+            document.getElementById("facts").innerHTML="This car has great functionallity";
+            document.getElementById("mySidenavimg").innerHTML="<img src=resources/herb.jpg>";
             openNav();
         }
         function openNav(){
