@@ -5,27 +5,23 @@
     <body>
     <main>
         <nav class="floating-menu-top">
-            <img class="logo" src="resources/BUC_logo.png"><h1>BYU Used Cars</h1>
+            <img class="logo" src="resources/BUC_logo.png"><h1 class="name"></h1>BYU Used Cars</h1>
         </nav>
         <div class="row">
             <div class="car">
-<<<<<<< HEAD
-                <img src="resources/tesla.jpg" onclick=change() style="cursor:pointer"><br>
-=======
-                <img class="car_img" src="resources/tesla.jpg"><br>
->>>>>>> 7634304bdbf88d1af7af2db074c70e01eb4612bd
+                <img class="car_img" src="resources/tesla.jpg" onclick=changetes() style="cursor:pointer"><br>
                 <p>Tesla Model S P100DL - $21,000.00</p>
             </div>
             <div class="car">
-                <img src="resources/plp50.jpg"><br>
+                <img class="car_img" src="resources/plp50.jpg" onclick=changepeel() style="cursor:pointer"><br>
                 <p>Peel p50 - $6,000.00</p>
             </div>
             <div class="car">
-                <img src="resources/cosmo.png"><br>
+                <img class="car_img" src="resources/cosmo.png" onclick=changecosmo() style="cursor:pointer"><br>
                 <p>Cosmobile - $14,000.00</p>
             </div>
             <div class="car">
-                <img src="resources/delorean.jpg"><br>
+                <img class="car_img" src="resources/delorean.jpg" onclick=changedelo() style="cursor:pointer"><br>
                 <p>Delorean - $12,000,000</p>
             </div>
         </div>
@@ -35,14 +31,39 @@
             <h1 id="Make">Model</h1>
             <h1 id="Year">Year</h1>
             <h1 id="Price">Price</h1>
+            <p id="facts">Facts</p>
         </div>
     </main>
     <script>
-        function change(){
+        function changetes(){
             document.getElementById("Model").innerHTML="Tesla";
             document.getElementById("Make").innerHTML="S P100DL";
             document.getElementById("Year").innerHTML="2018";
             document.getElementById("Price").innerHTML="21,000.00"
+            document.getElementById("facts").innerHTML="With a sofware limited top speed "+
+            "of 130mph, and an acceleration from 0-60mph in 2.5s, this car will not only "+
+            "be the cleanest on the road, but will be one of the quickest.";
+            openNav();
+        }
+        function changecosmo(){
+            document.getElementById("Model").innerHTML="Ford";
+            document.getElementById("Make").innerHTML="Cosmobile";
+            document.getElementById("Year").innerHTML="2012";
+            document.getElementById("Price").innerHTML="14,000.00"
+            document.getElementById("facts").innerHTML="Not only does its top "
+            +"speed and acceleration vary depending on the cougars winning streak, "
+            +"but its price does too.";
+            openNav();
+        }
+        function changepeel(){
+            document.getElementById("Model").innerHTML="Peel";
+            document.getElementById("Make").innerHTML="P50";
+            document.getElementById("Year").innerHTML="1964";
+            document.getElementById("Price").innerHTML="21,000.00"
+            document.getElementById("facts").innerHTML="Just 53 in long and 39 in wide, "
+            +"with a weight of only 132 lb, this car will have you zipping around town "
+            +"at a staggering 38 mph, but don't worry, if you can't find a parking space, "
+            +"this car is elevator compatible";
             openNav();
         }
         function openNav(){

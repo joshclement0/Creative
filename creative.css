@@ -11,11 +11,13 @@ main{
 
 .logo {
     width:15%;
+    float:left;
 }
 
 .car {
-    margin:5%;
-    width:80%;
+    float:left;
+    width:22%;
+    margin:7px;
     outline: 5px solid green;
     background: lightgray;
 }
@@ -26,9 +28,19 @@ p {
 
 
 .floating-menu-top{
+    background-color:black;
     width:100%;
     position:fixed;
     top:3px;
+    float:left;
+}
+
+.name{
+    width:80%;
+    float:right;
+    color:royalblue;
+    text-align:right;
+    padding-right:40px;
 }
 .floating-menu-bottom{
     background-color:lightblue;
@@ -68,8 +80,9 @@ p {
     left:0;
     height:60%;
     transition:0.5s;
-    padding-top:50px;
+    padding-top:30px;
     padding-left:8px;
+    padding-right:8px;
     font-size:12px;
     background-color:Azure;
     overflow-x:hidden;
