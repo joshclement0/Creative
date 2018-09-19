@@ -4,6 +4,23 @@ main{
 * {
     box-sizing: border-box;
 }
+
+img {
+    width:100%;
+}
+
+.car {
+    margin:5%;
+    width:80%;
+    outline: 5px solid green;
+    background: lightgray;
+}
+
+p {
+    margin:5px;
+}
+
+
 .floating-menu-top{
     width:100%;
     position:fixed;

@@ -1,82 +1,31 @@
 <html>
     <head>
          <link rel="stylesheet" type="text/css" href="creative.css">
-        <script>
-            function addquestion(event){
-                var id="0";
-                var q1= "";
-                var q2="";
-                var q3="";
-                var q4="";
-                var q5="";
-                if (q1==""){
-                    id="1";
-                    q1=document.getElementById("this question").value;
-                    document.getElementById(id).innerHTML="<div class=column><div class=text>"
-                    +q1+"</div><div class=button><button onclick=delete(1)>Delete</div></div>";
-                    event.preventDefault();
-                }
-                else if (q2==""){
-                    id="2";
-                    q2=document.getElementById("this question").value;
-                    document.getElementById(id).innerHTML="<div class=column><div class=text>"
-                    +q2+"</div><div class=button><button onclick=delete(2)>Delete</div></div>";
-                    event.preventDefault();
-                }
-                else if (q3==""){
-                    id="3";
-                    q3=document.getElementById("this question").value;
-                    document.getElementById(id).innerHTML="<div class=column><div class=text>"
-                    +q3+"</div><div class=button><button onclick=delete(3)>Delete</div></div>";
-                    event.preventDefault();
-                }
-                else if (q4==""){
-                    id="4";
-                    q4=document.getElementById("this question").value;
-                    document.getElementById(id).innerHTML="<div class=column><div class=text>"
-                    +q4+"</div><div class=button><button onclick=delete(4)>Delete</div></div>";
-                    event.preventDefault();
-                }
-                else if (q5==""){
-                    id="5";
-                    q5=document.getElementById("this question").value;
-                    document.getElementById(id).innerHTML="<div class=column><div class=text>"
-                    +q5+"</div><div class=button><button onclick=delete(5)>Delete</div></div>";
-                    event.preventDefault();
-                }
-                else {
-                   //return error tell them to delete
-                   return;//don't do anything
-                }
-                
-            }
-        </script>
     </head>
     <body>
     <main>
         <nav class="floating-menu-top">
-            <h1>Title of the Project or something like that. Maybe something saying that if there are no questions to add them</h1>
+            <h1>BYU Used Cars</h1>
         </nav>
-        <nav class="floating-menu-bottom">
-            <div class="column">
-            <div class="text">
-                Question: <input type="question" id="this question" size=30%><br>
+        <div class="row">
+            <div class="car">
+                <img src="resources/tesla.jpg"><br>
+                <p>Tesla Model S P100DL - $21,000.00</p>
             </div>
-            <div class="button">
-                <button onclick="addquestion(event)" id=question>ADD</button>
+            <div class="car">
+                <img src="resources/plp50.jpg"><br>
+                <p>Peel p50 - $6,000.00</p>
             </div>
+            <div class="car">
+                <img src="resources/cosmo.png"><br>
+                <p>Cosmobile - $14,000.00</p>
             </div>
-        </nav>
-        <p1 id="1">
-            <div class= "column">
-                <div class="text"><p>this is the formatting</p></div>
-                <div class="button"><p> of the button as well</p></div>
+            <div class="car">
+                <img src="resources/delorean.jpg"><br>
+                <p>Delorean - $12,000,000</p>
             </div>
-        </p1>
-        <p1 id="2">some text</p1>
-        <p1 id="3"> more text</p1>
-        <p1 id="4"> and more</p1>
-        <p1 id="5">and then more</p1>
+        </div>
+        
     </main>
     </body>
 </html>
