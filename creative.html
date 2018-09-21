@@ -5,7 +5,7 @@
     <body background="resources/wallpaper.png">
         <main>
             <nav class="floating-menu-top">
-                <img class="logo" src="resources/BUC_logo.png"><h1 class="name">BYU Used Cars</h1>
+                <img class="logo" src="resources/BUC_logo.png" onclick=alertOnLogoClick() style="cursor:pointer"><h1 class="name">BYU Used Cars</h1>
             </nav>
             <div class="row">
                 <div class="car">
@@ -62,6 +62,9 @@
     
         </main>
         <script>
+            function alertOnLogoClick(){
+                alert("Thank you for visiting BYU Used Cars!");
+            };
             function openNav(){
                 document.getElementById("mySidenav").style.width="250px";
                 document.getElementById("mySidenav").style.border="5px solid royalblue";
